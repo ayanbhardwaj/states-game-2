@@ -3,6 +3,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 from flask_bootstrap import Bootstrap
+import os
 STATES = ["Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Jharkhand", "Goa", "Gujrat", "Haryana",
           "Himachal Pradesh", "Chhattisgarh", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur",
           "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana",
@@ -11,7 +12,7 @@ STATES = ["Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Jharkhand", 
 guessed = []
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "ddfigrksmgdksxlgdktngkceoutb"
+app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 Bootstrap(app)
 
 
