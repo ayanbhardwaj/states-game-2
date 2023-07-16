@@ -1,0 +1,317 @@
+body {
+  font-family: Montserrat;
+  text-align: center;
+}
+
+
+/* main content */
+
+/* card image */
+
+.card-img {
+  height: 600px;
+  width: 480px;
+}
+
+.card-img {
+  height: 600px;
+  width: 480px;
+}
+
+/* states */
+.state1 {
+  position: sticky;
+  margin-top: 420px;
+  margin-left: -130px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state2 {
+  position: sticky;
+  margin-top: -290px;
+  margin-left: 330px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state3 {
+  position: sticky;
+  margin-top: 10px;
+  margin-left: 220px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state4 {
+  position: sticky;
+  margin-top: -10px;
+  margin-left: 80px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state5 {
+  position: sticky;
+  margin-top: 20px;
+  margin-left: 60px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state6 {
+  position: sticky;
+  margin-top: 150px;
+  margin-left: -320px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state7 {
+  position: sticky;
+  margin-top: -200px;
+  margin-left: -330px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state8 {
+  position: sticky;
+  margin-top: -140px;
+  margin-left: -240px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state9 {
+  position: sticky;
+  margin-top: -90px;
+  margin-left: -160px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state10 {
+  position: sticky;
+  margin-top: 200px;
+  margin-left: -80px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state11 {
+  position: sticky;
+  margin-top: 120px;
+  margin-left: -270px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state12 {
+  position: sticky;
+  margin-top: 70px;
+  margin-left: -260px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state13 {
+  position: sticky;
+  margin-top: -300px;
+  margin-left: -180px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state14 {
+  position: sticky;
+  margin-top: 80px;
+  margin-left: -240px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state15 {
+  position: sticky;
+  margin-top: -140px;
+  margin-left: 330px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state16 {
+  position: sticky;
+  margin-top: -50px;
+  margin-left: 230px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state17 {
+  position: sticky;
+  margin-top: 40px;
+  margin-left: 310px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state18 {
+  position: sticky;
+  margin-top: -100px;
+  margin-left: 365px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state19 {
+  position: sticky;
+  margin-top: 95px;
+  margin-left: 60px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state20 {
+  position: sticky;
+  margin-top: -250px;
+  margin-left: -240px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state21 {
+  position: sticky;
+  margin-top: 80px;
+  margin-left: -290px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state22 {
+  position: sticky;
+  margin-top: -55px;
+  margin-left: 160px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state23 {
+  position: sticky;
+  margin-top: 310px;
+  margin-left: -130px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state24 {
+  position: sticky;
+  margin-top: -150px;
+  margin-left: -135px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state25 {
+  position: sticky;
+  margin-top: -150px;
+  margin-left: 230px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state26 {
+  position: sticky;
+  margin-top: -160px;
+  margin-left: -110px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state27 {
+  position: sticky;
+  margin-top: 50px;
+  margin-left: -70px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state28 {
+  position: sticky;
+  margin-top: 60px;
+  margin-left: 110px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state29 {
+  position: sticky;
+  margin-top: 180px;
+  margin-left: 220px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state30 {
+  position: sticky;
+  margin-top: -385px;
+  margin-left: -200px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state31 {
+  position: sticky;
+  margin-top: 190px;
+  margin-left: -410px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state32 {
+  position: sticky;
+  margin-top: -190px;
+  margin-left: -185px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state33 {
+  position: sticky;
+  margin-top: -140px;
+  margin-left: -230px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state34 {
+  position: sticky;
+  margin-top: -70px;
+  margin-left: -190px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state35 {
+  position: sticky;
+  margin-top: 460px;
+  margin-left: -360px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.state36 {
+  position: sticky;
+  margin-top: -120px;
+  margin-left: 0px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+
+/* footer */
+
+.footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+

@@ -1,0 +1,249 @@
+{% import "bootstrap/wtf.html" as wtf %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>India states game</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
+  <!-- Bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- css sheet -->
+  <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}" >
+
+
+  <!-- fontawesome cdn -->
+  <script src="https://kit.fontawesome.com/55c6c12287.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="container-fluid main-headline">
+    <h1>India States/UT guessing game</h1>
+  </div>
+
+
+  <!-- Main Content -->
+  <div class="card bg-light">
+    <div class="col-lg-10 col-md-10 mx-auto">
+    <img src="{{url_for('static', filename='images/home.png')}}" class="card-img" alt="...">
+    <div class="card-img-overlay intro">
+      <p style="visibility:hidden;" class='state1'>Andhra Pradesh</p>
+      <p style="visibility:hidden;" class='state2'>Arunachal Pradesh</p>
+      <p style="visibility:hidden;" class='state3'>Assam</p>
+      <p style="visibility:hidden;" class='state4'>Bihar</p>
+      <p style="visibility:hidden;" class='state5'>Jharkhand</p>
+      <p style="visibility:hidden;" class='state6'>Goa</p>
+      <p style="visibility:hidden;" class='state7'>Gujrat</p>
+      <p style="visibility:hidden;" class='state8'>Haryana</p>
+      <p style="visibility:hidden;" class='state9'>Himachal Pradesh</p>
+      <p style="visibility:hidden;" class='state10'>Chhattisgarh</p>
+      <p style="visibility:hidden;" class='state11'>Karnataka</p>
+      <p style="visibility:hidden;" class='state12'>Kerala</p>
+      <p style="visibility:hidden;" class='state13'>Madhya Pradesh</p>
+      <p style="visibility:hidden;" class='state14'>Maharashtra</p>
+      <p style="visibility:hidden;" class='state15'>Manipur</p>
+      <p style="visibility:hidden;" class='state16'>Meghalaya</p>
+      <p style="visibility:hidden;" class='state17'>Mizoram</p>
+      <p style="visibility:hidden;" class='state18'>Nagaland</p>
+      <p style="visibility:hidden;" class='state19'>Odisha</p>
+      <p style="visibility:hidden;" class='state20'>Punjab</p>
+      <p style="visibility:hidden;" class='state21'>Rajasthan</p>
+      <p style="visibility:hidden;" class='state22'>Sikkim</p>
+      <p style="visibility:hidden;" class='state23'>Tamil Nadu</p>
+      <p style="visibility:hidden;" class='state24'>Telangana</p>
+      <p style="visibility:hidden;" class='state25'>Tripura</p>
+      <p style="visibility:hidden;" class='state26'>Uttarakhand</p>
+      <p style="visibility:hidden;" class='state27'>Uttar Pradesh</p>
+      <p style="visibility:hidden;" class='state28'>West Bengal</p>
+      <p style="visibility:hidden;" class='state29'>Andaman & Nicobar Islands</p>
+      <p style="visibility:hidden;" class='state30'>Chandigarh</p>
+      <p style="visibility:hidden;" class='state31'>Dadra & Nagar Haveli & Daman & Diu</p>
+      <p style="visibility:hidden;" class='state32'>Delhi</p>
+      <p style="visibility:hidden;" class='state33'>Jammu & Kashmir</p>
+      <p style="visibility:hidden;" class='state34'>Ladakh</p>
+      <p style="visibility:hidden;" class='state35'>Lakshadweep</p>
+      <p style="visibility:hidden;" class='state36'>Puducherry</p>
+    </div>
+    </div>
+  </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 mx-auto"><br>
+          {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+          {% with messages = get_flashed_messages() %}
+          {% if messages %}
+          {% for message in messages %}
+          <p class="flash-messages">{{ message }}</p>
+          {% endfor %}
+          {% endif %}
+          {% endwith %}<br>
+          <a href="{{url_for('remaining')}}"><button type="button" class="btn btn-info">Quit</button></a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="row">
+          <div class="col-lg-10 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Rahul Bhardwaj 2022</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      {% if 'Andhra Pradesh' in guessed: %}
+      document.querySelector(".state1").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Arunachal Pradesh' in guessed: %}
+      document.querySelector(".state2").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Assam' in guessed: %}
+      document.querySelector(".state3").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Bihar' in guessed: %}
+      document.querySelector(".state4").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Jharkhand' in guessed: %}
+      document.querySelector(".state5").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Goa' in guessed: %}
+      document.querySelector(".state6").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Gujrat' in guessed: %}
+      document.querySelector(".state7").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Haryana' in guessed: %}
+      document.querySelector(".state8").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Himachal Pradesh' in guessed: %}
+      document.querySelector(".state9").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Chhattisgarh' in guessed: %}
+      document.querySelector(".state10").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Karnataka' in guessed: %}
+      document.querySelector(".state11").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Kerala' in guessed: %}
+      document.querySelector(".state12").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Madhya Pradesh' in guessed: %}
+      document.querySelector(".state13").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Maharashtra' in guessed: %}
+      document.querySelector(".state14").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Manipur' in guessed: %}
+      document.querySelector(".state15").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Meghalaya' in guessed: %}
+      document.querySelector(".state16").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Mizoram' in guessed: %}
+      document.querySelector(".state17").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Nagaland' in guessed: %}
+      document.querySelector(".state18").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Odisha' in guessed: %}
+      document.querySelector(".state19").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Punjab' in guessed :%}
+      document.querySelector(".state20").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Rajasthan' in guessed: %}
+      document.querySelector(".state21").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Sikkim' in guessed: %}
+      document.querySelector(".state22").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Tamil Nadu' in guessed: %}
+      document.querySelector(".state23").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Telangana' in guessed :%}
+      document.querySelector(".state24").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Tripura' in guessed: %}
+      document.querySelector(".state25").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Uttarakhand' in guessed: %}
+      document.querySelector(".state26").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Uttar Pradesh' in guessed: %}
+      document.querySelector(".state27").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'West Bengal' in guessed: %}
+      document.querySelector(".state28").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Andaman & Nicobar Islands' in guessed: %}
+      document.querySelector(".state29").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Chandigarh' in guessed: %}
+      document.querySelector(".state30").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Dadra & Nagar Haveli & Daman & Diu' in guessed: %}
+      document.querySelector(".state31").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Delhi' in guessed: %}
+      document.querySelector(".state32").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Jammu & Kashmir' in guessed: %}
+      document.querySelector(".state33").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Ladakh' in guessed: %}
+      document.querySelector(".state34").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Lakshadweep' in guessed: %}
+      document.querySelector(".state35").setAttribute("style", "visibility:visible;");
+      {% endif %}
+      {% if 'Puducherry' in guessed: %}
+      document.querySelector(".state36").setAttribute("style", "visibility:visible;");
+      {% endif %}
+    </script>
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+
+</html>
